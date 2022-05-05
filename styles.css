@@ -12,7 +12,7 @@ body {
 }
 
 html {
-    font: 18px Arial, sans-serif;
+    font: 18px "Montserrat", sans-serif;
     -webkit-text-size-adjust: 100%;
     -webkit-ser-select: none;
     user-select: none;
@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    gap: 5px;
+    gap: 10px;
     box-sizing: border-box;
     margin: 0;
     padding: 10px;
@@ -59,7 +59,7 @@ button {
     border: none;
     border-radius: 0.25em;
     background-color: var(--surface-color);
-    font: 18px Arial, sans-serif;
+    font: 18px "Montserrat", sans-serif;
     transition: 250ms;
 }
 
@@ -72,11 +72,13 @@ button:hover {
     display: flex;
     align-items: center;
     flex: 1;
+    overflow: auto;
 }
 
 .game-container>div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 5px;
     flex: 1;
@@ -85,4 +87,11 @@ button:hover {
 .weapon-icon {
     margin: 0;
     font-size: 100px;
+}
+
+@media only screen and (max-width: 480px) {
+    .game-container {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
