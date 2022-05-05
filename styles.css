@@ -1,0 +1,88 @@
+:root {
+    --text-color: black;
+    --background-color: white;
+    --surface-color: #dcdcdc;
+    --accent-color: #3083e8;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+html {
+    font: 18px Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-ser-select: none;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 5px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+form {
+    width: fit-content;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]+label {
+    display: inline-block;
+    padding: 0.5em;
+    border-radius: 0.25em;
+    background-color: var(--surface-color);
+    transition: 250ms;
+}
+
+input[type="radio"]:checked+label {
+    color: white;
+    background-color: var(--accent-color);
+}
+
+button {
+    padding: 0.5em;
+    border: none;
+    border-radius: 0.25em;
+    background-color: var(--surface-color);
+    font: 18px Arial, sans-serif;
+    transition: 250ms;
+}
+
+button:hover {
+    color: white;
+    background-color: var(--accent-color);
+}
+
+.game-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.game-container>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    flex: 1;
+}
+
+.weapon-icon {
+    margin: 0;
+    font-size: 100px;
+}
