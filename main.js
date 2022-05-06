@@ -29,12 +29,10 @@ actionButton.addEventListener("click", () => {
 
     if (playerOneSelection != playerTwoSelection) {
         if (playerOneSelection > playerTwoSelection || playerOneSelection == playerTwoSelection) {
-            // Player one won
             score[0]++;
             document.querySelector("#player-one>h2").textContent = `${playerOneTitle}: ${score[0]}`;
         }
         else {
-            // Player two won
             score[1]++;
             document.querySelector("#player-two>h2").textContent = `${playerTwoTItle}: ${score[1]}`;
         }
