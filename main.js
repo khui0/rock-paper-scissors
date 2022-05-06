@@ -23,7 +23,7 @@ document.querySelectorAll(`input[name="selection"]`).forEach(input => {
 });
 
 actionButton.addEventListener("click", () => {
-    var randomSelection = Math.floor(Math.random() * 3);
+    let randomSelection = Math.floor(Math.random() * 3);
     playerTwoSelection = randomSelection;
     playerTwoIcon.textContent = icons[playerTwoSelection];
 
