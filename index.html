@@ -16,38 +16,23 @@
 
 <body>
     <h1>Rock Paper Scissors</h1>
-    <form>
-        <input type="radio" name="mode" id="single" value="0" checked>
-        <label for="single">Singleplayer</label>
-        <input type="radio" name="mode" id="multi" value="1">
-        <label for="multi">Pass and play</label>
-    </form>
     <div class="game-container">
-        <div id="p1">
+        <div id="player-one">
             <h2></h2>
-            <p class="weapon-icon"></p>
+            <p class="icon"></p>
             <form>
-                <input type="radio" name="p1-selection" id="p1-rock" value="0" checked>
-                <label for="p1-rock">Rock</label>
-                <input type="radio" name="p1-selection" id="p1-paper" value="1">
-                <label for="p1-paper">Paper</label>
-                <input type="radio" name="p1-selection" id="p1-scissors" value="2">
-                <label for="p1-scissors">Scissors</label>
+                <input type="radio" name="selection" id="rock" value="0" checked>
+                <label for="rock">Rock</label>
+                <input type="radio" name="selection" id="paper" value="1">
+                <label for="paper">Paper</label>
+                <input type="radio" name="selection" id="scissors" value="2">
+                <label for="scissors">Scissors</label>
             </form>
             <button id="p1-submit">Submit</button>
         </div>
-        <div id="p2">
+        <div id="player-two">
             <h2></h2>
-            <p class="weapon-icon"></p>
-            <form>
-                <input type="radio" name="p2-selection" id="p2-rock" value="0" checked>
-                <label for="p2-rock">Rock</label>
-                <input type="radio" name="p2-selection" id="p2-paper" value="1">
-                <label for="p2-paper">Paper</label>
-                <input type="radio" name="p2-selection" id="p2-scissors" value="2">
-                <label for="p2-scissors">Scissors</label>
-            </form>
-            <button id="p2-submit">Submit</button>
+            <p class="icon"></p>
         </div>
     </div>
     <button id="action">Shoot</button>
