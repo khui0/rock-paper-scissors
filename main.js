@@ -28,7 +28,7 @@ actionButton.addEventListener("click", () => {
     playerTwoIcon.textContent = icons[playerTwoSelection];
 
     if (playerOneSelection != playerTwoSelection) {
-        if (playerOneSelection > playerTwoSelection || playerOneSelection == playerTwoSelection) {
+        if (playerOneSelection > playerTwoSelection || (playerOneSelection == 0 && playerTwoSelection == 2)) {
             score[0]++;
             document.querySelector("#player-one>h2").textContent = `${playerOneTitle}: ${score[0]}`;
         }
@@ -36,5 +36,11 @@ actionButton.addEventListener("click", () => {
             score[1]++;
             document.querySelector("#player-two>h2").textContent = `${playerTwoTItle}: ${score[1]}`;
         }
+    }
+});
+
+document.addEventListener("keydown", e => {
+    if (e.key == "Enter") {
+        actionButton.click();
     }
 });
