@@ -27,20 +27,27 @@ actionButton.addEventListener("click", () => {
     playerTwoSelection = randomSelection;
     playerTwoIcon.textContent = icons[playerTwoSelection];
 
-    if (playerOneSelection != playerTwoSelection) {
-        if (playerOneSelection > playerTwoSelection || (playerOneSelection == 0 && playerTwoSelection == 2)) {
-            score[0]++;
-            document.querySelector("#player-one>h2").textContent = `${playerOneTitle}: ${score[0]}`;
-        }
-        else {
-            score[1]++;
-            document.querySelector("#player-two>h2").textContent = `${playerTwoTItle}: ${score[1]}`;
-        }
+    if ((playerTwoSelection + 1) % 3 == playerOneSelection) {
+        score[0]++;
+        document.querySelector("#player-one>h2").textContent = `${playerOneTitle}: ${score[0]}`;
+    }
+    else if ((playerOneSelection + 1) % 3 == playerTwoSelection) {
+        score[1]++;
+        document.querySelector("#player-two>h2").textContent = `${playerTwoTItle}: ${score[1]}`;
     }
 });
 
 document.addEventListener("keydown", e => {
     if (e.key == "Enter") {
         actionButton.click();
+    }
+    else if (e.key == "1") {
+        document.getElementById("rock").checked = true;
+    }
+    else if (e.key == "2") {
+        document.getElementById("paper").checked = true;
+    }
+    else if (e.key == "3") {
+        document.getElementById("scissors").checked = true;
     }
 });
