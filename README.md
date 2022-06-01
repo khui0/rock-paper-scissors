@@ -1,3 +1,3 @@
 # Rock Paper Scissors
  
-Definitely not copying someone else
+It is indeed rock paper scissors
