@@ -1,3 +1,3 @@
 # Rock Paper Scissors
  
-It is indeed rock paper scissors
+it is indeed rock paper scissors
