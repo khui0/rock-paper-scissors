@@ -1,6 +1,6 @@
 const playerOneTitle = "You";
 const playerTwoTItle = "COM";
-const icons = ["🎳", "🧻", "🔪"];
+const icons = ["🪨", "🧻", "✂️"];
 
 const playerOneIcon = document.querySelector("#player-one>p");
 const playerTwoIcon = document.querySelector("#player-two>p");
